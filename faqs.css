@@ -1,0 +1,41 @@
+.faqs{
+   padding-right: 20%;
+    padding: 2rem 3rem ;
+
+}
+.faqs>h1{
+    text-transform: uppercase;
+    font-size: 2rem;
+
+}
+.faq>h3{
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
+
+}
+.faq{
+    width: 80vw;
+    padding: 0.7rem 0;
+}
+.faq>h1{
+    padding-bottom: 0.3rem;
+}
+
+/* media queries */
+@media screen and (max-width:450px) {
+    .home{
+        overflow: auto;
+    }
+    .faq {
+        padding: 2rem 1.2rem;
+    }
+    .faq {
+        width: 95%;
+        padding: 0.7rem 0;
+    }
+    .faq>h1 {
+        font-size: 1.5rem;
+    }
+    
+}

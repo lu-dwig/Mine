@@ -1,0 +1,198 @@
+ .companyWiseServiceCon{
+    display: flex;
+    gap:5rem;
+    height: 40%;
+}
+
+
+.companyWiseServiceSect{
+    padding: 5rem 5rem;
+}
+.companyWiseServiceSect>h1{
+    text-transform: uppercase;
+    padding-bottom: 1.5rem;
+    font-size: 2rem;
+}
+.serviceImg{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    
+} 
+.section__container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 5rem 1rem;
+}
+
+.travellers__grid {
+  /* margin-top: 2rem; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.travellers__card {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  border-radius: 2rem;
+  overflow: hidden;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+.travellers__card img{
+    
+    overflow: hidden;
+}
+.travellers__card__content {
+  display: flex;
+  position: relative;
+  padding: 1rem; 
+  text-align: center;
+}
+
+
+/* .travellers__card__content img {
+  position: absolute;
+  max-width: 70px;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5px solid var(--extra-light);
+  border-radius: 100%;
+} */
+
+.travellers__card__content h4 {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.travellers__card__content p {
+  font-weight: 500;
+  color: var(--text-light);
+}
+
+.serviceImg img{
+    width: 320px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow-1);
+
+}
+.serviceDetail{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 3rem;
+}
+.serviceImg  a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+    height: 50px;
+    color: var(--white-color);
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 10px;
+    text-transform: uppercase;
+    background-color: var(--appointment-color);
+
+}
+.serviceImg  a:hover{
+    background-color: var(--secondary-color);
+
+}
+.serviceImg a i{
+    padding-bottom: 3px;
+}
+
+
+/* media queries */
+@media screen and ((min-width:451px) and (max-width:768px)){
+    .companyWiseServiceSect {
+        padding: 2rem 2rem;
+    }
+    .companyWiseServiceCon {
+        gap: 3rem;
+        flex-direction: column-reverse;
+    }
+    .serviceImg {
+        flex-direction: row-reverse;
+        gap: 1rem;
+    }
+    .serviceImg img {
+        width: 244px;
+    }
+    .serviceImg a i {
+        display: none;
+    }
+    .serviceImg a{
+        height: 70px;
+        text-align: center;
+    }
+    .serviceImg .apptmnt{
+        display: flex;
+        align-self: end;
+    }
+}
+
+@media screen and (max-width:450px) {
+    
+    .companyWiseServiceSect {
+        padding: 1rem 1rem 1rem 1rem;
+        padding: 1rem 1rem 1rem 1rem;
+    }
+    .companyWiseServiceCon {
+        flex-direction: column-reverse;
+        gap: 3rem;
+    }
+    .serviceImg {
+        flex-direction: column-reverse;
+        gap: 2rem;
+    }
+    .serviceDetail {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 3rem;
+    }
+    .serviceDetailItem {
+        border: 1px solid var(--secondary-color);
+        box-shadow: var(--box-shadow-1);
+        border-radius: 5px;
+        padding: 1rem 1.5rem;
+        transition: 0.2s;
+    }
+    .serviceDetailItem:hover{
+        transform: scale(1.03);
+        background-color: aliceblue;
+
+    }
+    .serviceImg img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width320px) {
+    .companyWiseServiceSect>h1 {
+        font-size: 1.8rem;
+      
+    }
+    .companyWiseServiceSect {
+        padding: 1rem 1rem 1rem 1rem;
+    }
+    
+}
+@media (width < 1200px) {
+
+  .travellers__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (width < 900px) {
+
+  .travellers__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
