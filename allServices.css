@@ -3,6 +3,34 @@ body {
     background-color: #f0f2f5;
     /* Light gray background */
 }
+.whatsapp {
+  position: fixed;
+  bottom: 1rem;       /* 16px */
+  right: 1rem;        /* 16px */
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 0.125rem;       /* 2px */
+}
+
+.whatsapp p {
+  font-size: 0.875rem; /* 14px */
+  font-weight: 600;
+  background-color: #ffffff;
+  padding-left: 0.5rem;  /* 8px */
+  padding-right: 0.5rem; /* 8px */
+  padding-top: 0.125rem; /* 2px */
+  padding-bottom: 0.125rem; /* 2px */
+  border-radius: 0.25rem; /* 4px */
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  margin-top: 0.25rem;   /* 4px */
+}
+
+.whatsapp img {
+  height: 60px;
+  width: 68px;
+}
 
 .nav-link-custom {
     padding-left: 0.75rem;
