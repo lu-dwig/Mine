@@ -21,10 +21,10 @@
     height: 380px;     /* Set YOUR desired uniform height here */
     overflow: hidden; 
 }
-.ownerInfoItemCon .imgDiv{
+/* .ownerInfoItemCon .imgDiv{
     width: 100%;
     overflow: hidden;
-}
+} */
 .ownersInfoCon{
     margin: 4rem auto;
     width: fit-content;
@@ -85,10 +85,10 @@ body{
         max-width: 90vw;
         width: fit-content;
     }
-    .ownerInfoItemCon {
+    /* .ownerInfoItemCon {
         width: auto;
         
-    }
+    } */
     .ownersInfoCon>h1 {
         font-size: 2.5rem;
         text-align: center;
